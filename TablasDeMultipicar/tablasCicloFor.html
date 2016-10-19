@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Tablas de multiplicar</title>
+	</head>
+	<body>
+		<h1>Tablas de Multiplicar</h1>
+		<section id="cuadro"></section>
+		<script>
+		/*
+		Tablas de multiplicar
+
+			x * z = producto
+			1 * 1 = 1
+			1 * 2 =2
+			1 * 10 = 10
+		*/
+		var multiplicando; // valor a multiplicar (x)
+		var multiplicador; // valor consecutivo por el cual se va a multipllicar (z)
+		var producto; // resultado de la operación
+
+			// for 1: permite desplegar el valor de x desde el 1 al 10
+			for(multiplicando=1;multiplicando<=10;multiplicando++)
+			{
+				document.write("<h2>Tabla del: "+multiplicando+"</h2>");
+				
+				//for 2: permite generar la numeración de z del 1 al 10
+				for(multiplicador=1;multiplicador<=10;multiplicador++)
+				{
+					producto=multiplicando*multiplicador; //	operación de x por y
+					document.write("<h3>"+multiplicando+" * "+multiplicador+" = "+producto);	
+				}
+				document.write("<hr/>"); //separación entre cada tabla
+			}
+		</script>
+	</body>
+</html>
