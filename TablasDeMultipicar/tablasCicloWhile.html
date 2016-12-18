@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Tablas de multiplicar con el Ciclo WHILE</title>
+	</head>
+	<body>
+		<h1>Tablas de multiplicar con el ciclo WHILE</h1>
+		<script>
+		var multiplicando=1;
+		var producto;
+
+		while(multiplicando<=10)
+		{
+			document.write("<h2>Tabla del: "+multiplicando+"</h2>");
+			var multiplicador=1;
+			while(multiplicador<=10)
+			{
+				
+				producto=multiplicando*multiplicador;
+
+				document.write("<h3>"+multiplicando+" * "+multiplicador+" = "+producto+"</h3>");
+				multiplicador=multiplicador+1;
+				console.log("multiplicador: "+multiplicador);
+			
+			}
+			multiplicando++;
+			document.write("<hr/>");	
+		}
+		</script>
+	</body>
+</html>
